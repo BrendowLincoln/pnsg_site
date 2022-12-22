@@ -1,0 +1,126 @@
+#header {
+    width: 100%;
+    background: linear-gradient(#39B9F0 0%, rgba(57, 185, 240, 0) 247.57%);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    height: 108px;
+
+    .social-medias-contact-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 28px;
+        height: 28px;
+        border-bottom: 0.5px solid #8EDDFF;
+
+        .social-contact-icon {    
+            margin-right: 13px;
+            font-size: 16px;
+            width: 16px;
+            height: 16px;
+            color: #FFFFFF;
+        }
+        
+        .social-contact-icon:hover {    
+            cursor: pointer;
+        }
+
+        .social-contact-label {
+            color: #FFFFFF;
+            font-size: 10px;
+        }
+
+        .media-icons-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .information-contacts-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .email-contact,
+            .number-contact {
+                height: 100%;
+                display: flex;
+                padding: 0 18px;
+                justify-content: center;
+                align-items: center;
+                border-left: 0.5px solid rgba(255, 255, 255, 0.25);
+
+                .link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                }
+
+                .link :visited {
+                    color: #FFFFFf;
+                }
+            }
+            
+        }
+    }
+
+    .menu-header {
+        background-color: transparent;
+        height: 80px !important;
+
+        .pnsg-logo {
+            height: 67px;
+            width: 82px;
+            padding-right: 20px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            padding-right: 80px;
+            font-size: 22px;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-family: 'Libre Caslon Text', serif;
+            font-style: italic;
+        }
+
+        .menu-buttons {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            gap: 10px;
+
+            .default-menu-header-button {
+                color: white;
+                font-size: 14px;
+            }
+    
+            .default-menu-header-button:hover {
+                color: #39B9F0;
+                background-color: white;
+            }
+        }
+
+        .highlighted-button-container {
+            height: 100%;
+            width: 44%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .highlighted-button {
+                width: 150px;
+                height: 35px;
+                background-color: #0072BC;
+                color: #FFFFFF;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+        
+    }
+    
+}
