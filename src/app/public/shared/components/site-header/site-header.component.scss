@@ -87,6 +87,21 @@
             font-style: italic;
         }
 
+        .header-main-buttons-container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+
+        .header-responsive-button-container {
+            display: none;
+            width: 100%;
+
+            .menu-sidenav-button {
+                color: #FFFFFF;
+            }
+        }
+
         .menu-buttons {
             display: flex;
             height: 100%;
@@ -122,5 +137,134 @@
         }
         
     }
+
+    .menu-sidenav {
+        height: 100vh;
+        background-color: transparent;
+
+        .sidenav {
+            width: 15%;
+            .menu-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+    
+                .default-menu-sidenav-button {
+                    color: #39B9F0;
+                    width: 100%;
+                    background-color: white;
+                    font-size: 14px;
+                }
+        
+                .default-menu-sidenav-button:hover {
+                    color: white;
+                    background-color: #39B9F0;
+                }
+            }
+    
+            .highlighted-button-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+    
+                .highlighted-button {
+                    width: 150px;
+                    height: 35px;
+                    background-color: #0072BC;
+                    color: #FFFFFF;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    
+
+
     
 }
+
+/* bigger laptops */
+@media only screen and (min-width: 1366px) {
+    .highlighted-button-container {
+        display: none;
+    }
+ }
+/* Desktops and laptops ----------- */
+@media only screen and (max-width: 1366px) {
+    
+
+
+}
+
+/* Mobile devices ----------- */
+@media only screen and (max-width: 320px) {}
+/* Mobile devices */
+@media only screen and (min-width: 321px) and (max-width: 482px) {}
+/* iPads, Tablets devices */
+@media only screen and (min-width: 481px) and (max-width: 770px) { 
+    #header {
+        .menu-header {
+            .header-main-buttons-container {
+                display: none;
+            }
+        
+            .header-responsive-button-container {
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+        }
+    }
+}
+/* Small screens, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    #header {
+        .menu-header {
+            .header-main-buttons-container {
+                display: none;
+            }
+        
+            .header-responsive-button-container {
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+        }
+    }
+}
+/* Desktops, large screens */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    #header {
+        .menu-header {
+            .title-container {
+                padding-right: 20px;
+            }
+
+            .header-main-buttons-container {
+                .menu-buttons {
+                    gap: 5px;
+                    .default-menu-header-button {
+                        font-size: 12px;
+                    }
+                }
+
+                
+                .highlighted-button-container {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/* Desktops, large screens */
+@media only screen and (min-width: 1366px) { }
+
+
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV

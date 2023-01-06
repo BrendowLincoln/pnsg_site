@@ -1,4 +1,5 @@
 <header id="header">
+    <mat-drawer-container class="menu-sidenav">
     <div class="social-medias-contact-header">
         <div class="media-icons-container">
             <a class="social-contact-icon" href="https://api.whatsapp.com/send?phone=5522999034477" target="_blank">
@@ -32,26 +33,64 @@
         <div class="title-container">
             Paróquia <br/>Nossa Senhora das Graças
         </div>
+        <div class="header-main-buttons-container">
+            <div class="menu-buttons">
+                <button routerlink="" mat-button class="default-menu-header-button"> 
+                    Início
+                </button>
+                <button routerlink="" mat-button class="default-menu-header-button">
+                    A Paróquia
+                </button>
+                <button routerlink="" mat-button class="default-menu-header-button">
+                    Pastorais
+                </button>
+                <button routerlink="" mat-button class="default-menu-header-button">
+                    Comunidades
+                </button>
+                <button routerlink="" mat-button class="default-menu-header-button">
+                    Díziomo
+                </button>
+                <button routerlink="" mat-button class="default-menu-header-button">
+                    Agenda
+                </button>
+                <button routerlink="" mat-button class="default-menu-header-button">
+                    Galeria
+                </button>
+            </div>
+            <div class="highlighted-button-container">
+                <button routerlink="" mat-button class="highlighted-button">
+                    Peça sua intenção
+                </button>
+            </div>
+        </div>
+        <div class="header-responsive-button-container">
+            <button  class="menu-sidenav-button" mat-icon-button (click)="openSideNav()" aria-label="Example icon button with a menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+    </mat-toolbar>
+    
+    <mat-drawer #sidenav class="sidenav" mode="over" position="end">
         <div class="menu-buttons">
-            <button routerlink="" mat-button class="default-menu-header-button"> 
+            <button routerlink="" mat-button class="default-menu-sidenav-button"> 
                 Início
             </button>
-            <button routerlink="" mat-button class="default-menu-header-button">
+            <button routerlink="" mat-button class="default-menu-sidenav-button">
                 A Paróquia
             </button>
-            <button routerlink="" mat-button class="default-menu-header-button">
+            <button routerlink="" mat-button class="default-menu-sidenav-button">
                 Pastorais
             </button>
-            <button routerlink="" mat-button class="default-menu-header-button">
+            <button routerlink="" mat-button class="default-menu-sidenav-button">
                 Comunidades
             </button>
-            <button routerlink="" mat-button class="default-menu-header-button">
+            <button routerlink="" mat-button class="default-menu-sidenav-button">
                 Díziomo
             </button>
-            <button routerlink="" mat-button class="default-menu-header-button">
+            <button routerlink="" mat-button class="default-menu-sidenav-button">
                 Agenda
             </button>
-            <button routerlink="" mat-button class="default-menu-header-button">
+            <button routerlink="" mat-button class="default-menu-sidenav-button">
                 Galeria
             </button>
         </div>
@@ -60,5 +99,6 @@
                 Peça sua intenção
             </button>
         </div>
-    </mat-toolbar>
+    </mat-drawer>
+    </mat-drawer-container>
 </header>
