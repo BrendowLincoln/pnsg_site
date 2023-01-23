@@ -195,7 +195,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^13.0.0 || ^14.0.0-0", "@angular/core@^14.2.0", "@angular/core@14.2.10":
+"@angular/core@^13.0.0 || ^14.0.0-0", "@angular/core@^14.2.0", "@angular/core@>=14.0.0", "@angular/core@14.2.10":
   version "14.2.10"
   resolved "https://registry.npmjs.org/@angular/core/-/core-14.2.10.tgz"
   integrity sha512-3XN+c0+tAtcUc8o7sQ41RLcSFPMt8krCfKFpDUOQwKjm90OOBcoG0LfmRfYBFNAenQh4glQQGOaYvLY98bTFTw==
@@ -1352,6 +1352,11 @@
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@mattlewis92/dom-autoscroller@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.npmjs.org/@mattlewis92/dom-autoscroller/-/dom-autoscroller-2.4.2.tgz"
+  integrity sha512-YbrUWREPGEjE/FU6foXcAT1YbVwqD/jkYnY1dFb0o4AxtP3s4xKBthlELjndZih8uwsDWgQZx1eNskRNe2BgZQ==
+
 "@ngtools/webpack@14.2.9":
   version "14.2.9"
   resolved "https://registry.npmjs.org/@ngtools/webpack/-/webpack-14.2.9.tgz"
@@ -1439,6 +1444,11 @@
     node-gyp "^9.0.0"
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
+
+"@scarf/scarf@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@scarf/scarf/-/scarf-1.1.1.tgz"
+  integrity sha512-VGbKDbk1RFIaSmdVb0cNjjWJoRWRI/Weo23AjRCC2nryO0iAS8pzsToJfPVPtVs74WHw4L1UTADNdIYRLkirZQ==
 
 "@schematics/angular@14.2.9":
   version "14.2.9"
@@ -1850,6 +1860,40 @@ ajv@^8.0.0, ajv@^8.8.0, ajv@^8.8.2, ajv@8.11.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
+angular-calendar-scheduler@^14.2.0:
+  version "14.2.0"
+  resolved "https://registry.npmjs.org/angular-calendar-scheduler/-/angular-calendar-scheduler-14.2.0.tgz"
+  integrity sha512-KZl7eiyfeuRmqEDw6rOdy2EpMSlKK4IjfBEUbhsFMxMeQgf75Ybh+VFJHw9g3bXEpIRRBz+tK0v+3oKyUr6tbQ==
+  dependencies:
+    tslib "^2.3.0"
+
+angular-calendar@^0.30.1:
+  version "0.30.1"
+  resolved "https://registry.npmjs.org/angular-calendar/-/angular-calendar-0.30.1.tgz"
+  integrity sha512-QNDGmMzDH/Lx0WXya3mug+MYEpEAQHKlErB/ZpE5F1glChFmPuWCV4aLN6sqacMjZW1TybAJ/ES88B6LS7l8zw==
+  dependencies:
+    "@scarf/scarf" "^1.1.1"
+    angular-draggable-droppable "^7.0.0"
+    angular-resizable-element "^6.0.0"
+    calendar-utils "^0.10.1"
+    positioning "^2.0.1"
+    tslib "^2.4.0"
+
+angular-draggable-droppable@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/angular-draggable-droppable/-/angular-draggable-droppable-7.0.0.tgz"
+  integrity sha512-XEtIx4hsByrwunKPHiqXRcqCPZlP2YF7ZXWgdoBIGiNVg0L/4xx8OcaKVeVsrOrKsN/t/IB4kJqeG45btUcSGA==
+  dependencies:
+    "@mattlewis92/dom-autoscroller" "^2.4.2"
+    tslib "^2.4.0"
+
+angular-resizable-element@^6.0.0:
+  version "6.0.2"
+  resolved "https://registry.npmjs.org/angular-resizable-element/-/angular-resizable-element-6.0.2.tgz"
+  integrity sha512-OEWDfI945UqQMpHfRn/XNrGrOZAXEv6Utzqoc83yAYuNIKJXyTpivcrr/IZsQq735QYLLV/OeDzdP5XilLdMDA==
+  dependencies:
+    tslib "^2.3.0"
+
 ansi-colors@4.1.3:
   version "4.1.3"
   resolved "https://registry.npmjs.org/ansi-colors/-/ansi-colors-4.1.3.tgz"
@@ -2145,6 +2189,11 @@ cacache@^16.0.0, cacache@^16.1.0, cacache@16.1.2:
     ssri "^9.0.0"
     tar "^6.1.11"
     unique-filename "^1.1.1"
+
+calendar-utils@^0.10.1:
+  version "0.10.4"
+  resolved "https://registry.npmjs.org/calendar-utils/-/calendar-utils-0.10.4.tgz"
+  integrity sha512-gBK4xCJ42yjaUKwuUha6cZOfxAmGzvSgbdAaX3xLRioeKbYoOK1x1qeD6dch72rsMZlTgATPbBBx42bnkStqgQ==
 
 call-bind@^1.0.0:
   version "1.0.2"
@@ -2524,6 +2573,11 @@ custom-event@~1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/custom-event/-/custom-event-1.0.1.tgz"
   integrity sha512-GAj5FOq0Hd+RsCGVJxZuKaIDXDf3h6GQoNEjFgbLLI/trgtavwUbSnZ5pVfg27DVCaWjIohryS0JFwIJyT2cMg==
+
+date-fns@^2.29.3:
+  version "2.29.3"
+  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.29.3.tgz"
+  integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
 
 date-format@^4.0.14:
   version "4.0.14"
@@ -4626,6 +4680,11 @@ pkg-dir@^4.1.0:
   dependencies:
     find-up "^4.0.0"
 
+positioning@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/positioning/-/positioning-2.0.1.tgz"
+  integrity sha512-DsAgM42kV/ObuwlRpAzDTjH9E8fGKkMDJHWFX+kfNXSxh7UCCQxEmdjv/Ws5Ft1XDnt3JT8fIDYeKNSE2TbttA==
+
 postcss-attribute-case-insensitive@^5.0.2:
   version "5.0.2"
   resolved "https://registry.npmjs.org/postcss-attribute-case-insensitive/-/postcss-attribute-case-insensitive-5.0.2.tgz"
@@ -5837,7 +5896,7 @@ tslib@^1.9.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0, tslib@^2.3.0:
+tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0:
   version "2.4.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.4.1.tgz"
   integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
